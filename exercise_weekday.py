@@ -1,20 +1,9 @@
 def weekday():
-    """
-    Ejercicio 6 - Día Hábil
 
-    Leer un día de la semana mediante input() (en minúsculas: lunes, martes, etc.).
-    Determinar si es un día hábil o fin de semana.
+    dia_semana = input()
+    dia_semana = dia_semana.lower()
 
-    Un día es hábil si NO es sábado y NO es domingo (usar operador not).
-
-    Ejemplo:
-        Para la entrada "lunes", la salida esperada es:
-        Dia habil
-
-        Para la entrada "sabado", la salida esperada es:
-        Fin de semana
-
-        Para la entrada "domingo", la salida esperada es:
-        Fin de semana
-    """
-    pass
+    if dia_semana == "lunes" or dia_semana == "martes" or dia_semana == "miercoles" or dia_semana == "jueves" or dia_semana == "viernes":
+        print("Dia habil")
+    else:
+        print("Fin de semana")
